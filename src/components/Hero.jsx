@@ -7,7 +7,7 @@ const Hero = () => {
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
-    const text = "Electrical Engineering Student";
+    const text = "Ellectrical Engineering Student";
     let index = -1;
     let typingInterval;
     
