@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://shadyblues2006-d/shadyblues2006-d.github.io/personal-website/",
+  "homepage": "https://diti-chhaproo.github.io/",
   "scripts": {
     "start": "npm run dev",
     "dev": "vite",
