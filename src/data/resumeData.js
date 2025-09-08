@@ -1,3 +1,5 @@
+import { duration } from "@mui/material";
+
 // Import resume data directly from JSON file
 const resumeData = {
   personal_info: {
@@ -10,9 +12,10 @@ const resumeData = {
     university: "University of Illinois Urbana-Champaign",
     degree: "BSc in Systems Engineering and Design",
     graduation_date: "May 2027",
-    gpa: "3.83/4.0",
+    gpa: "3.6/4.0",
     coursework: [
-      "Calc 1 & 2",
+      "Linear Algebra",
+      "Calc 2 & 3",
       "Engineering Graphics & Design",
       "Business Side of Engineering",
       "Introduction to Electronics",
@@ -20,6 +23,12 @@ const resumeData = {
     ]
   },
   projects: [
+    {
+      title: "Orbital Playground",
+      role: "Creator & Developer",
+      duration: "May 2025 - June 2025",
+      description: "Developed a Python toolkit simulating rocket propulsion with 150+ mission scenarios across multiple propulsion modes and destinations.",
+    },
     {
       title: "Goldman Sachs Possibilities Summit",
       role: "Selected Participant",
@@ -66,15 +75,23 @@ const resumeData = {
   ],
   internships: [
     {
-      company: "Furtados School of Music",
-      duration: "April 2024 – August 2024",
+      company: "Vishnu Prasad Research Center (VPRC)",
+      duration: "May 2025 – Present",
       description: [
-        "Developed a code that converts piano input into a MIDI file on the cloud server to enable live music grading",
-        "Began the CAD development of a device that would be provided to over 250,000+ students around the world with Furtados' partner schools"
+        "Collaborating with leading scientists and the Government of India, contributing to the development of quantum tunneling frameworks for a planned 2000 km quantum communication network."
       ]
     },
     {
-      company: "CMS Info Systems",
+      company: "Illinois Business Consulting - Senior Consultant",
+      duration: "September 2024 – Present",
+      description: [
+        "Consulting for a strategic partnership project underlying the 7 frontiers of technology alongside a Big Four Corporation",
+        "Working with a team where we interviewed 50+ industry experts and recommended frameworks to secure the company's evolution in this growing field",
+        "Conducted cost analysis and investment optimization for a global logistics firm in the Gulf region"
+      ]
+    },
+    {
+      company: "CMS Info Systems - Software Development Intern",
       duration: "July 2023–August 2023",
       description: [
         "Created datasets of face masks, covers and helmets to train the RaspberryPi model that would be used with 70,000 ATM CCTV cameras to conduct data analysis",

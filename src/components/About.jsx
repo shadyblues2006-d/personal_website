@@ -41,25 +41,41 @@ const About = () => {
             </div>
             
             <p className="text-gray-300 mb-4">
-              I'm an Electrical Engineering student at the University of Illinois Urbana-Champaign, passionate about systems engineering, electronics, and technology innovation. My academic journey focuses on Systems Engineering and Design, where I combine technical prowess with strong analytical skills.
+              I'm an Systems Engineering student at the University of Illinois Urbana-Champaign. I am driven to learning more about hardware design, quantum algorithms and astrophysics.
             </p>
             
             <p className="text-gray-300 mb-4">
-              With experience in consulting, research, and project management, I bring a multidisciplinary approach to engineering challenges. I've worked on projects ranging from self-balancing robots to software development for cloud-based music grading systems.
+              With experience in technical and strategic consulting, research, and project management, I bring a multidisciplinary approach to engineering challenges. I've worked on projects ranging from self-balancing robots to software development for cloud-based music grading systems.
             </p>
             
             <p className="text-gray-300">
-              I'm particularly interested in the intersection of electrical engineering with cutting-edge technologies like quantum computing and AI. My goal is to develop innovative solutions that can make a positive impact on society through thoughtful engineering and design.
+              I'm particularly interested in the intersection of electrical engineering with cutting-edge technologies like quantum computing and AI. My goal is to develop innovative solutions that can make a positive impact on society through thoughtful engineering and design!
             </p>
             
             <div className="mt-6 pt-6 border-t border-gray-700">
-              <h3 className="text-xl font-semibold mb-4 text-blue-400">Personal Achievements</h3>
-              <ul className="list-disc pl-5 text-gray-300 space-y-2">
-                <li>High School Valedictorian</li>
-                <li>EKPHARSIS-II: Poetry National Winner for 'Dali and I - his mighty dream'</li>
-                <li>Selected for Goldman Sachs Women's Possibilities Summit (4% acceptance rate)</li>
-              </ul>
+              <h3 className="text-xl font-semibold mb-4 text-blue-400">Technical Skills</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-8 text-gray-300 text-base">
+                <ul className="space-y-2 list-disc pl-5">
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Arduino</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>Electrical Engineering</li>
+                    <li>AutoCAD</li>
+                  </ul>
+                  <ul className="space-y-2 list-disc pl-5">
+                    <li>Design Concepts</li>
+                    <li>Calculations</li>
+                    <li>MS Excel</li>
+                    <li>MS Word</li>
+                    <li>MS PowerPoint</li>
+                    <li>Fast-Fourier Transform</li>
+                    <li>Literature Review</li>
+                </ul>
+              </div>
             </div>
+
           </div>
         </div>
       </div>

@@ -80,56 +80,6 @@ const Experience = () => {
             <div className="hidden md:block absolute bottom-0 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-blue-500 animate-ping"></div>
             <div className="hidden md:block absolute bottom-0 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-blue-500 opacity-75"></div>
           </div>
-          
-          {/* Additional Experience */}
-          <div className="mt-16 pt-8 border-t border-gray-700">
-            <div className="text-center mb-8">
-              <h3 className="text-xl font-semibold inline-block relative">
-                <span className="text-blue-400">Additional Experience</span>
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-blue-400 to-transparent"></span>
-              </h3>
-            </div>
-            
-            <div className="bg-gray-900/80 backdrop-blur-sm border border-gray-700 rounded-lg p-6 shadow-lg">
-              <div className="mb-6">
-                <h4 className="text-lg font-semibold text-white mb-2">Illinois Business Consulting</h4>
-                <p className="text-gray-400 text-sm mb-3">Experienced Consultant | September 2024 – Present</p>
-                
-                <div className="space-y-3 mt-4">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 h-5 w-5 rounded-full bg-blue-900 border border-blue-400 flex items-center justify-center mt-1">
-                      <div className="h-2 w-2 bg-blue-400 rounded-full"></div>
-                    </div>
-                    <p className="ml-3 text-gray-300">Consulted for a strategic partnership project underlying the 7 frontiers of technology alongside a Big Four Corporation</p>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 h-5 w-5 rounded-full bg-blue-900 border border-blue-400 flex items-center justify-center mt-1">
-                      <div className="h-2 w-2 bg-blue-400 rounded-full"></div>
-                    </div>
-                    <p className="ml-3 text-gray-300">Worked with a team where we interviewed 50+ industry experts and recommended frameworks to secure the company's evolution in this growing field</p>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 h-5 w-5 rounded-full bg-blue-900 border border-blue-400 flex items-center justify-center mt-1">
-                      <div className="h-2 w-2 bg-blue-400 rounded-full"></div>
-                    </div>
-                    <p className="ml-3 text-gray-300">Conducted cost analysis and investment optimization for a global logistics firm in the Gulf region</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div>
-                <h4 className="text-lg font-semibold text-white mb-2">Goldman Sachs Possibilities Summit</h4>
-                <p className="text-gray-400 text-sm mb-3">Selected Participant | January 2025 - Present</p>
-                
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 h-5 w-5 rounded-full bg-blue-900 border border-blue-400 flex items-center justify-center mt-1">
-                    <div className="h-2 w-2 bg-blue-400 rounded-full"></div>
-                  </div>
-                  <p className="ml-3 text-gray-300">Selected for the Women's Possibilities Summit with a 4% acceptance rate, gaining insights into financial markets, leadership, and career development from industry experts.</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

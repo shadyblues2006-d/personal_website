@@ -7,33 +7,30 @@ const Hero = () => {
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
-    const text = "Ellectrical Engineering Student";
-    let index = -1;
-    let typingInterval;
-    
-    // Clear existing intervals first to prevent multiple instances
-    clearInterval(typingInterval);
-    setTypedText("");
-    
-    typingInterval = setInterval(() => {
-      if (index < text.length) {
-        setTypedText(prev => prev + text.charAt(index));
-        index++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }, 100);
-    
-    // Cursor blinking effect
-    const cursorInterval = setInterval(() => {
-      setShowCursor(prev => !prev);
-    }, 500);
-    
-    return () => {
+  const text = "Systems Engineering Student";
+  let index = 0;
+  
+  setTypedText(""); // Reset right before the typing starts
+
+  const typingInterval = setInterval(() => {
+    setTypedText(text.slice(0, index + 1));
+    index++;
+    if (index === text.length) {
       clearInterval(typingInterval);
-      clearInterval(cursorInterval);
-    };
-  }, []);
+    }
+  }, 100);
+
+  // Cursor blinking effect
+  const cursorInterval = setInterval(() => {
+    setShowCursor(prev => !prev);
+  }, 500);
+
+  return () => {
+    clearInterval(typingInterval);
+    clearInterval(cursorInterval);
+  };
+}, []);
+
 
   return (
     <section 
@@ -44,8 +41,8 @@ const Hero = () => {
       <CircuitConnector start={{ x: '100%', y: '60%' }} end={{ x: '70%', y: '60%' }} />
       
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="md:w-1/2 mb-10 md:mb-0">
+        <div className="flex flex-col md:flex-row items-center justify-center min-h-[60vh] gap-12">
+          <div className="md:w-auto mb-10 md:mb-0 flex flex-col items-center md:items-start">
             <h2 className="text-blue-400 font-mono mb-2 animate-pulse">&lt;class="engineer"&gt;</h2>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
               Diti Chhaproo
@@ -57,8 +54,8 @@ const Hero = () => {
             </h2>
             
             <p className="text-gray-400 mb-8 max-w-lg">
-              Passionate about systems engineering, electronics, and circuit design. 
-              Building tomorrow's technology with innovative solutions.
+              I am interested in quantum computing, electronics, and practical problem-solving
+              
             </p>
             
             <div className="flex space-x-4">
@@ -104,7 +101,7 @@ const Hero = () => {
           </div>
           
           <div className="md:w-1/2 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
+            <div className="relative w-72 h-72 md:w-[26rem] md:h-[26rem]">
               {/* Circuit board styled frame */}
               <div className="absolute inset-0 border-2 border-blue-500 rounded-full animate-pulse"></div>
               
@@ -121,9 +118,13 @@ const Hero = () => {
               <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-blue-500 rounded-full"></div>
               
               {/* Profile image placeholder */}
-              <div className="absolute inset-4 bg-gray-800 rounded-full flex items-center justify-center overflow-hidden border-2 border-gray-700">
-                <div className="text-5xl md:text-6xl font-bold text-blue-400">DC</div>
-              </div>
+              <img
+                src="/personal_website/me.jpeg" // Change to your actual file name, e.g., /myphoto.png
+                alt="Diti Chhaproo"
+                className="absolute inset-4 w-[calc(100%-32px)] h-[calc(100%-32px)] object-cover rounded-full border-2 border-gray-700 shadow-lg bg-gray-200"
+                style={{ objectPosition: 'center top' }}
+              />
+
             </div>
           </div>
         </div>
