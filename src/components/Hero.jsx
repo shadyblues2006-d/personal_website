@@ -119,7 +119,7 @@ const Hero = () => {
               
               {/* Profile image placeholder */}
               <img
-                src="/personal_website/me.jpeg" // Change to your actual file name, e.g., /myphoto.png
+                src={`${import.meta.env.BASE_URL}me.jpeg`}
                 alt="Diti Chhaproo"
                 className="absolute inset-4 w-[calc(100%-32px)] h-[calc(100%-32px)] object-cover rounded-full border-2 border-gray-700 shadow-lg bg-gray-200"
                 style={{ objectPosition: 'center top' }}
