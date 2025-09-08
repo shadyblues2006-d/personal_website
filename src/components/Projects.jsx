@@ -82,44 +82,27 @@ const Projects = () => {
                 
                 {/* Circuit decoration */}
                 <div className="mt-4 pt-4 border-t border-gray-700 flex justify-between items-center">
-                  <div className="flex space-x-2">
-                    {index === 0 && (
-                      <span className="bg-blue-900/30 text-blue-300 text-xs px-2 py-1 rounded-full border border-blue-800">
-                        Finance
-                      </span>
-                    )}
-                    {index === 1 && (
-                      <>
-                        <span className="bg-blue-900/30 text-blue-300 text-xs px-2 py-1 rounded-full border border-blue-800">
-                          Consulting
-                        </span>
-                        <span className="bg-blue-900/30 text-blue-300 text-xs px-2 py-1 rounded-full border border-blue-800">
-                          Technology
-                        </span>
-                      </>
-                    )}
-                    {index === 2 && (
-                      <>
-                        <span className="bg-blue-900/30 text-blue-300 text-xs px-2 py-1 rounded-full border border-blue-800">
-                          Education
-                        </span>
-                        <span className="bg-blue-900/30 text-blue-300 text-xs px-2 py-1 rounded-full border border-blue-800">
-                          Community Service
-                        </span>
-                      </>
-                    )}
-                    {index === 3 && (
-                      <>
-                        <span className="bg-blue-900/30 text-blue-300 text-xs px-2 py-1 rounded-full border border-blue-800">
-                          Leadership
-                        </span>
-                        <span className="bg-blue-900/30 text-blue-300 text-xs px-2 py-1 rounded-full border border-blue-800">
-                          Event Management
-                        </span>
-                      </>
+                  <div>
+                    {project.title === 'Orbital Playground' && (
+                      <a
+                        href="https://github.com/shadyblues2006-d/orbital-playground"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Orbital Playground on GitHub"
+                        className="text-gray-400 hover:text-white transition-colors"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                        >
+                          <path d="M12 2C6.477 2 2 6.486 2 12.021c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.455-1.158-1.112-1.467-1.112-1.467-.909-.622.069-.609.069-.609 1.004.071 1.532 1.032 1.532 1.032.893 1.534 2.343 1.09 2.913.834.091-.648.35-1.09.636-1.341-2.22-.253-4.555-1.113-4.555-4.952 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.851.004 1.707.115 2.507.337 1.909-1.296 2.748-1.026 2.748-1.026.545 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.696-4.566 4.944.359.31.678.921.678 1.856 0 1.34-.012 2.419-.012 2.749 0 .268.18.579.688.481A9.996 9.996 0 0 0 22 12.021C22 6.486 17.523 2 12 2z" />
+                        </svg>
+                      </a>
                     )}
                   </div>
-                  
                   <CircuitNode size={4} className="animate-pulse" />
                 </div>
               </div>

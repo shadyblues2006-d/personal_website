@@ -56,7 +56,7 @@ const resumeData = {
     },
     {
       title: "Global Confluence MUN",
-      role: "Director General (2023) and Secretary General (2024)",
+      role: "Secretary General",
       duration: "May 2023 - August 2024",
       description: [
         "Established a 40-member secretariat and spearheaded the organisation of one of Mumbai's most esteemed MUNs, ensuring exceptional event management and participant engagement.",
