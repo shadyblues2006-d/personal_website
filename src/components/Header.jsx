@@ -5,13 +5,14 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   const menuItems = [
-    { id: "about", label: "About" },
-    { id: "education", label: "Education" },
-    { id: "skills", label: "Skills" },
-    { id: "experience", label: "Experience" },
-    { id: "projects", label: "Projects" },
-    { id: "publications", label: "Publications" },
-    { id: "contact", label: "Contact" }
+  { id: "about", label: "About" },
+  { id: "education", label: "Education" },
+  { id: "skills", label: "Skills" },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "portfolio", label: "Portfolio" },
+  { id: "publications", label: "Publications" },
+  { id: "contact", label: "Contact" }
   ];
 
   useEffect(() => {

@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Publications from './components/Publications';
 import Contact from './components/Contact';
+import CADPortfolio from './components/CADPortfolio';
 import { CircuitBackground } from './utils/CircuitElements';
 
 function App() {
@@ -46,6 +47,8 @@ function App() {
           <Experience />
           <Projects />
           <Publications />
+            {/* CAD Portfolio Section */}
+            <CADPortfolio />
           <Contact />
         </main>
         <footer className="py-6 text-center text-sm text-gray-400 border-t border-gray-800">
